@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: nbstripout
+        name: Clear Jupyter notebook outputs
+        entry: uv run nbstripout
+        language: system
+        files: \.ipynb$
